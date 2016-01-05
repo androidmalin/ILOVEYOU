@@ -25,7 +25,7 @@ gen/
 *build/
 .gradle/
 .idea/
-RengwuxianRxjava.iml
+PrettyGirl.iml.iml
 gradle.properties
 gen-external-apklibs/
 
