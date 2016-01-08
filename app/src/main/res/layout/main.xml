@@ -10,6 +10,8 @@
         android:contentDescription="@null"
         android:layout_gravity="center"
         android:visibility="gone"
+        android:clickable="true"
+        android:focusable="true"
         android:scaleType="centerInside" />
 
     <com.malin.love.wangyayun.view.FlowerView

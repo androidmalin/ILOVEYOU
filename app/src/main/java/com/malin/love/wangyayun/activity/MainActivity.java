@@ -1,6 +1,7 @@
 package com.malin.love.wangyayun.activity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.os.Bundle;
@@ -10,6 +11,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 
+import com.jakewharton.rxbinding.view.RxView;
 import com.malin.love.wangyayun.R;
 import com.malin.love.wangyayun.constant.Constant;
 import com.malin.love.wangyayun.factory.ImageNameFactory;
@@ -19,14 +21,22 @@ import com.malin.love.wangyayun.view.FlowerView;
 
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.concurrent.TimeUnit;
 
 import rx.Observable;
 import rx.Subscriber;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Action0;
+import rx.functions.Action1;
 import rx.functions.Func1;
 import rx.schedulers.Schedulers;
 
+/**
+ * 类描述:主页面
+ * 创建人:
+ * 创建时间:16-1-7
+ * 备注:
+ */
 public class MainActivity extends Activity {
     private static final String JPG = ".jpg";
     private FlowerView mFlowerView;
@@ -77,6 +87,7 @@ public class MainActivity extends Activity {
         };
         rxJavaSolveMiZhiSuoJinAndNestedLoopAndCallbackHell();
         myTimer.schedule(mTask, 3000, 10);
+        clickEvent();
 
     }
 
@@ -89,16 +100,16 @@ public class MainActivity extends Activity {
     }
 
 
-    private void cancleTimer(){
+    private void cancleTimer() {
 
-        if (myTimer!=null){
+        if (myTimer != null) {
             myTimer.cancel();
             myTimer = null;
         }
 
-        if (mTask!=null){
+        if (mTask != null) {
             mTask.cancel();
-            mTask =null;
+            mTask = null;
         }
     }
 
@@ -219,8 +230,21 @@ public class MainActivity extends Activity {
                 });
     }
 
-    private void showAllViews(){
+    private void showAllViews() {
         mImageView.setVisibility(View.VISIBLE);
         mFlowerView.setVisibility(View.VISIBLE);
+    }
+
+
+    private void clickEvent() {
+
+        RxView.clicks(mImageView)
+                .throttleFirst(500, TimeUnit.MILLISECONDS)
+                .subscribe(new Action1<Void>() {
+                    @Override
+                    public void call(Void aVoid) {
+                        startActivity(new Intent(MainActivity.this, SayToHerActivity.class));
+                    }
+                });
     }
 }
