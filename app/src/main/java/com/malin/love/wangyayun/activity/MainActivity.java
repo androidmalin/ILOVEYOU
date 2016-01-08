@@ -243,7 +243,7 @@ public class MainActivity extends Activity {
                 .subscribe(new Action1<Void>() {
                     @Override
                     public void call(Void aVoid) {
-                        startActivity(new Intent(MainActivity.this, SayToHerActivity.class));
+                        startActivity(new Intent(MainActivity.this, LoveWebViewActivity.class));
                     }
                 });
     }

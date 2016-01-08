@@ -22,7 +22,7 @@
 
 <div id="mainDiv">
 	<div id="content">
-		<div id="code">
+	<!--	<div id="code">
 			<span class="comments">/**</span><br />
 			<span class="space"/><span class="comments">*2013—02-14,</span><br />
 			<span class="space"/><span class="comments">*2013-02-28.</span><br />
@@ -49,7 +49,7 @@
 			<br>
 			I want to say:<br />
 			Baby, I love you forever;<br />
-		</div>
+		</div> -->
 		<div id="loveHeart">
 			<canvas id="garden"></canvas>
 			<div id="words">
@@ -86,19 +86,19 @@ if (!document.createElement('canvas').getContext) {
 	msg.id = "errorMsg";
 	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
 	document.body.appendChild(msg);
-	$("#code").css("display", "none")
+	//$("#code").css("display", "none");
 	$("#copyright").css("position", "absolute");
 	$("#copyright").css("bottom", "10px");
 	document.execCommand("stop");
 } else {
 	setTimeout(function () {
 		startHeartAnimation();
-	}, 5000);
+	}, 0);
 
-	timeElapse(together);
-	setInterval(function () {
-		timeElapse(together);
-	}, 500);
+//	timeElapse(together);
+//	setInterval(function () {
+	//	timeElapse(together);
+//	}, 500);
 
 	adjustCodePosition();
 	$("#code").typewriter();
@@ -107,3 +107,7 @@ if (!document.createElement('canvas').getContext) {
 
 </body>
 </html>
+
+<!--setTimeout(function () {-->
+<!--startHeartAnimation();-->
+<!--}, 0);-->

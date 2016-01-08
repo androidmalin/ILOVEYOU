@@ -61,7 +61,7 @@ function startHeartAnimation() {
 			heart.push(bloom);
 			garden.createRandomBloom(bloom[0], bloom[1]);
 		}
-		//if (angle >= 30) {
+		/if (angle >= 30) {
 		//	clearInterval(animationTimer);
 		//	showMessages();
 		//} else {
