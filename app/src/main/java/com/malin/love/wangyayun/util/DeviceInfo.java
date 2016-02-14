@@ -3,6 +3,13 @@ package com.malin.love.wangyayun.util;
 import android.app.Activity;
 import android.util.DisplayMetrics;
 
+/**
+ * 类描述:手机设备的信息
+ * 创建人:malin.myemail@gmail.com
+ * 创建时间:15-11-10.下午3:26
+ * 备注:
+ * 参考项目:Android-Universal-Image-Loader
+ */
 public class DeviceInfo {
     private static volatile DeviceInfo instance;
     public static float mDensity;

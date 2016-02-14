@@ -10,7 +10,12 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
-
+/**
+ * 类描述:图片处理类
+ * 创建人:malin.myemail@gmail.com
+ * 创建时间:15-11-11.
+ * 参考项目:
+ */
 public class ImageUtils {
 
     public static Bitmap getImageBitmapFromAssetsFolderThroughImagePathName(Context context, String imagePathName, int reqWidth, int reqHeight) {

@@ -43,7 +43,6 @@ import rx.schedulers.Schedulers;
 
 public class MainActivity extends Activity {
     private static final String JPG = ".jpg";
-    //小木箱，虽然你又矮又笨，从来都不喜欢我。即使这样，我还是，很喜欢你。--马琳
     private static final String LOVE = "林真心，虽然你又矮又笨，还喜欢别的男生。即使这样，我还是，很喜欢你。--马琳";
     private static final int SNOW_BLOCK = 1;
     public static final String URL = "file:///android_asset/index.html";
@@ -387,6 +386,10 @@ public class MainActivity extends Activity {
     }
 
 
+    /**
+     * remove View Drawables
+     * @param view
+     */
     private void unBindDrawables(View view) {
         if (view != null) {
             try {

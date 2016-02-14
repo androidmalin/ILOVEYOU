@@ -29,7 +29,7 @@ import android.os.SystemClock;
 import android.util.Log;
 
 /**
- * 类描述:手机设备的信息
+ * 类描述:快速点击判断
  * 创建人:malin.myemail@gmail.com
  * 创建时间:16-01-20.下午17:50
  * 备注:
@@ -38,7 +38,7 @@ public class ClickUtils {
 
     private static final String TAG = ClickUtils.class.getSimpleName();
     private static long lastClickTime = 0L;
-    private static final boolean isDebug = true;
+    private static final boolean isDebug = false;
     private static final String BLANK_LOG = "\t";
     /**
      * 用于处理频繁点击问题, 如果两次点击小于500毫秒则不予以响应
