@@ -28,7 +28,7 @@ WebView内存泄露的问题
 [HeartLayout](https://github.com/tyrantgit/HeartLayout)|periscope like heartlayout
 [Snowfall](https://github.com/StylingAndroid/Snowfall)|snowfall
 [TypeTextView](https://github.com/zmywly8866/TypeTextView)| 打字机效果
-[HTML5-love-you](https://github.com/xuanfeng/HTML5-love-you)|(html源码)[http://xuanfengge.com/demo/201409/love/]
+[HTML5-love-you](https://github.com/xuanfeng/HTML5-love-you)|[html源码](http://xuanfengge.com/demo/201409/love/)
 
 
 
