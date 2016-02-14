@@ -8,7 +8,10 @@ import android.widget.TextView;
 import java.util.Timer;
 import java.util.TimerTask;
 
-
+/**
+ * 类描述:打字机效果
+ * 出处:https://github.com/zmywly8866/TypeTextView
+ */
 public class TypeTextView extends TextView {
     private static final int TYPE_TIME_DELAY = 100;
     private Context mContext = null;

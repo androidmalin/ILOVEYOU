@@ -20,6 +20,10 @@ import rx.functions.Action1;
 import rx.functions.Func1;
 import rx.schedulers.Schedulers;
 
+/**
+ * 类描述:雪花效果
+ * 出处:http://blog.csdn.net/yayun0516/article/details/49488701
+ */
 public class FlowerView extends View {
     float de;
     MyFlower[] flowers;

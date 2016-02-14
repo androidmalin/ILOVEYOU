@@ -9,6 +9,8 @@
 ###APK下载
 
 二维码下载<br/>
+
+<br/>
 ![Block detail](screenshots/love_down.png "detail")<br/>
 <br/>
 

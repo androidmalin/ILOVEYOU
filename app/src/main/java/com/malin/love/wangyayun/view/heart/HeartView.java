@@ -28,7 +28,10 @@ import android.widget.ImageView;
 
 import com.malin.love.wangyayun.R;
 
-
+/***
+ * Periscope 效果
+ * 出处:https://github.com/tyrantgit/HeartLayout
+ */
 public class HeartView extends ImageView {
 
     private static final Paint sPaint = new Paint(Paint.ANTI_ALIAS_FLAG | Paint.FILTER_BITMAP_FLAG);
