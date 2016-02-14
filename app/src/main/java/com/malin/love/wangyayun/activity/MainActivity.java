@@ -95,6 +95,8 @@ public class MainActivity extends Activity {
         mWebViwFrameLayout = (FrameLayout) findViewById(R.id.fl_webView_layout);
         this.mWebView = new WebView(getApplicationContext());
         this.mWebView.setVisibility(View.GONE);
+        mWebView.setScrollBarStyle(View.SCROLLBARS_OUTSIDE_OVERLAY);
+        //scrollbars
 
         FrameLayout.LayoutParams fp = new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
         fp.gravity = Gravity.CENTER;
