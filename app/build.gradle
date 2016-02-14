@@ -1,5 +1,4 @@
 apply plugin: 'com.android.application'
-
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.2"
@@ -8,8 +7,8 @@ android {
         applicationId "com.malin.love.wangyayun"
         minSdkVersion 15
         targetSdkVersion 23
-        versionCode 1
-        versionName "1.0"
+        versionCode 521
+        versionName "521"
     }
     buildTypes {
         release {
@@ -17,9 +16,16 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    lintOptions {
+        abortOnError false
+    }
+
 }
 
-//add for logger
 repositories {
     jcenter()
     maven { url "https://jitpack.io" }
@@ -27,11 +33,5 @@ repositories {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:23.1.1'
-    compile 'com.android.support:support-v4:23.1.1'
-    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.3.1'
-    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.3.1'
-    compile 'com.jakewharton.scalpel:scalpel:1.1.2'
     compile 'io.reactivex:rxandroid:1.0.1'
-    compile 'com.github.orhanobut:logger:1.12'
-    compile 'com.jakewharton.rxbinding:rxbinding:0.3.0'
 }

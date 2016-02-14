@@ -29,7 +29,6 @@ PrettyGirl.iml.iml
 gradle.properties
 local.properties
 gen-external-apklibs/
-app/src/main/assets/dongyu/dongyu.jpg
 
 # Eclipse project files
 .classpath
