@@ -7,11 +7,15 @@
 
 ###APK下载
 
-二维码下载
+二维码下载<br/>
 ![Block detail](screenshots/love_down.png "detail")<br/>
+<br/>
+
 [APK备用下载地址](http://fir.im/iloveyou)<br/>
 
 
+###存在的问题
+WebView内存泄露的问题
 
 ### 项目依赖
 
@@ -23,6 +27,10 @@
 [HeartLayout](https://github.com/tyrantgit/HeartLayout)|periscope like heartlayout
 [Snowfall](https://github.com/StylingAndroid/Snowfall)|snowfall
 [TypeTextView](https://github.com/zmywly8866/TypeTextView)| 打字机效果
+[HTML5-love-you](https://github.com/xuanfeng/HTML5-love-you)|(html源码)[http://xuanfengge.com/demo/201409/love/]
+
+
+
 
 ### 参考的文章
 作者 | 文章| 参考的地方
@@ -33,7 +41,12 @@
 [徐宜生](https://github.com/xuyisheng)|[Android群英传](https://item.jd.com/11758334.html)| Canvas的使用
 [shwenzhang](https://github.com/shwenzhang)|[Android内存优化杂谈](http://mp.weixin.qq.com/s?__biz=MzAwNDY1ODY2OQ==&mid=400656149&idx=1&sn=122b4f4965fafebf78ec0b4fce2ef62a&3rd=MzA3MDU4NTYzMw==&scene=6#rd)| 内存优化
 [yayun0516](http://blog.csdn.net/yayun0516)|[自定义控件实现雪花飘落效果](http://blog.csdn.net/yayun0516/article/details/49488701)|示例代码
+[StylingAndroid](https://github.com/StylingAndroid)|[snowfall](https://blog.stylingandroid.com/snowfall/)|snowfall
+[liaohuqiu](https://github.com/liaohuqiu)|[Make GIF Snapshot for Android APP ](http://www.liaohuqiu.net/posts/make-gif-for-android-app/)|ezgif.com
 
+
+###特别感谢
+[程迎新](https://github.com/java7chen)对[HTML5-love-you](https://github.com/xuanfeng/HTML5-love-you)的源码进行了修改和手机适配.
 
 ###License
 <pre>
