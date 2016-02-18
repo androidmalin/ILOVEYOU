@@ -93,8 +93,8 @@ public class MainActivity extends Activity {
     private void initView() {
         mWebViwFrameLayout = (FrameLayout) findViewById(R.id.fl_webView_layout);
         this.mWebView = new WebView(getApplicationContext());
+        this.mWebView.setScrollBarStyle(View.SCROLLBARS_OUTSIDE_OVERLAY);
         this.mWebView.setVisibility(View.GONE);
-        mWebView.setScrollBarStyle(View.SCROLLBARS_OUTSIDE_OVERLAY);
         //scrollbars
 
         FrameLayout.LayoutParams fp = new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);

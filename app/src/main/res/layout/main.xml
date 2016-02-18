@@ -19,8 +19,7 @@
     <FrameLayout
         android:id="@+id/fl_webView_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    </FrameLayout>
+        android:layout_height="match_parent"/>
 
     <com.malin.love.wangyayun.view.typewriter.TypeTextView
         android:id="@+id/typeTextView"

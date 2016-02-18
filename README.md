@@ -51,6 +51,7 @@ WebView内存泄露的问题
 
 ###特别感谢
 [程迎新](https://github.com/java7chen)对[HTML5-love-you](https://github.com/xuanfeng/HTML5-love-you)的源码进行了修改和手机适配.
+[廖祜秋](https://github.com/liaohuqiu)给应用制作的演示Gif效果图.
 
 ###License
 <pre>

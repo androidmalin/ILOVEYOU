@@ -101,7 +101,13 @@ public class ImageUtils {
         }
         //Log.d(TAG,"w:"+bitmap.getWidth()+" h:"+bitmap.getHeight());
         if (bitmap != null) {
-            bitmap = Bitmap.createScaledBitmap(bitmap, reqWidth, reqHeight, true);
+            try{
+                bitmap = Bitmap.createScaledBitmap(bitmap, reqWidth, reqHeight, true);
+            }catch (OutOfMemoryError outOfMemoryError){
+                outOfMemoryError.printStackTrace();
+                System.gc();
+                return null;
+            }
         }
         return bitmap;
     }
