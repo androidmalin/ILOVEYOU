@@ -25,6 +25,7 @@ public class ImageUtils {
 
     private static final String TAG = ImageUtils.class.getSimpleName();
 
+    private ImageUtils(){}
     /**
      * 从assets文件夹中获取制定路径的图片的Bitmap
      *
@@ -68,14 +69,14 @@ public class ImageUtils {
             e.printStackTrace();
             return null;
         }
-        opts.inSampleSize = calculateInSampleSiez(opts, reqWidth, reqHeight);
+        opts.inSampleSize = calculateInSampleSize(opts, reqWidth, reqHeight);
 //         Log.d(TAG,""+opts.inSampleSize);
         opts.inJustDecodeBounds = false;
         opts.inPreferredConfig = Bitmap.Config.RGB_565;
         opts.inPurgeable = true;
         opts.inInputShareable = true;
         opts.inDither = false;
-        opts.inTempStorage = new byte[512 * 1024];
+        opts.inTempStorage = new byte[1024 * 1024];
         try {
             if (inputStream != null) {
                 bitmap = BitmapFactory.decodeStream(inputStream, null, opts);
@@ -102,7 +103,9 @@ public class ImageUtils {
         //Log.d(TAG,"w:"+bitmap.getWidth()+" h:"+bitmap.getHeight());
         if (bitmap != null) {
             try{
-                bitmap = Bitmap.createScaledBitmap(bitmap, reqWidth, reqHeight, true);
+                int orHeight = bitmap.getHeight();
+                int orWith = bitmap.getWidth();
+                bitmap = Bitmap.createScaledBitmap(bitmap, reqWidth, (int) ((reqWidth * 1.0f * orHeight) / orWith), true);
             }catch (OutOfMemoryError outOfMemoryError){
                 outOfMemoryError.printStackTrace();
                 System.gc();
@@ -122,7 +125,7 @@ public class ImageUtils {
      * @return 缩放系数, 2的次方
      * @Link http://hukai.me/android-training-course-in-chinese/graphics/displaying-bitmaps/load-bitmap.html
      */
-    public static int calculateInSampleSiez(BitmapFactory.Options options, int reqWidth, int reqHeight) {
+    public static int calculateInSampleSize(BitmapFactory.Options options, int reqWidth, int reqHeight) {
         // Raw height and width of image
         final int height = options.outHeight;
         final int width = options.outWidth;

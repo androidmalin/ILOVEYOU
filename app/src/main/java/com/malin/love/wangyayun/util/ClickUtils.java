@@ -45,6 +45,8 @@ public class ClickUtils {
      *
      * @return true:是连续的快速点击
      */
+
+    private ClickUtils(){}
     public static boolean isFastDoubleClick() {
         long nowTime = SystemClock.elapsedRealtime();//从开机到现在的毫秒数（手机睡眠(sleep)的时间也包括在内）
 

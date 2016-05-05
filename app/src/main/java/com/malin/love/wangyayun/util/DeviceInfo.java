@@ -27,7 +27,7 @@ public class DeviceInfo {
         return instance;
     }
 
-    protected DeviceInfo() {
+    private DeviceInfo() {
     }
 
     public void initializeScreenInfo(Activity activity) {

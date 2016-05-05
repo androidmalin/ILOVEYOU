@@ -247,7 +247,7 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 if (!ClickUtils.isFastDoubleClick()) {
-                    delayShowAll(0L);
+                    //delayShowAll(0L);
                 }
             }
         });
