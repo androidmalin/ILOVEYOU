@@ -3,12 +3,10 @@ package com.malin.love.wangyayun.view.whitesnow;
 class Random {
     private static final java.util.Random RANDOM = new java.util.Random();
 
-    Random() {
-    }
-
     public float getRandom(float lower, float upper) {
         float min = Math.min(lower, upper);
-        return getRandom(Math.max(lower, upper) - min) + min;
+        float max = Math.max(lower, upper);
+        return getRandom(max - min) + min;
     }
 
     public float getRandom(float upper) {
@@ -18,4 +16,5 @@ class Random {
     public int getRandom(int upper) {
         return RANDOM.nextInt(upper);
     }
+
 }

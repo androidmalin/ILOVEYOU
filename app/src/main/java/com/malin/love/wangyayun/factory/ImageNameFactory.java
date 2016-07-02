@@ -4,13 +4,14 @@ import java.util.ArrayList;
 
 /**
  * 类描述:获取图片文件夹类
- * 创建人:malin.myemail@gmail.com
+ * 创建人:malin.myemail@163.com
  * 创建时间:15-11-10.
  * 备注:
  */
 public class ImageNameFactory {
     private static final String FOLDER_NAME_ONE = "dongyu";
 
+    private ImageNameFactory(){}
     /**
      * 获取asset目录下的文件夹的名称集合
      *

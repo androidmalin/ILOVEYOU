@@ -16,27 +16,6 @@
         android:scaleType="centerCrop"
         android:visibility="visible" />
 
-    <FrameLayout
-        android:id="@+id/fl_webView_layout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-
-    <com.malin.love.wangyayun.view.typewriter.TypeTextView
-        android:id="@+id/typeTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="55dp"
-        android:gravity="center"
-        android:paddingBottom="55dp"
-        android:textColor="#fcaebb" />
-
-    <com.malin.love.wangyayun.view.bluesnow.FlowerView
-        android:id="@+id/flowerview"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:visibility="gone" />
 
     <com.malin.love.wangyayun.view.whitesnow.SnowView
         android:id="@+id/whiteSnowView"
@@ -52,12 +31,4 @@
         android:layout_gravity="center"
         android:visibility="gone" />
 
-    <com.malin.love.wangyayun.view.heart.HeartLayout
-        android:id="@+id/heart_o_red_layout"
-        android:layout_width="100dp"
-        android:layout_height="match_parent"
-        android:layout_gravity="bottom|right"
-        android:layout_marginBottom="50dp"
-        android:background="@android:color/transparent"
-        android:visibility="gone" />
 </FrameLayout>
